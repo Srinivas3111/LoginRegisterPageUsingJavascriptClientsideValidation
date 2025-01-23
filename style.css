@@ -1,0 +1,1022 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color:lightblue;
+}
+
+/*             -: NAVIGATION-BAR :-             */
+#navbar
+{
+    margin: 0%;
+    background-color:lightskyblue;
+    width: 100%;
+    border: 1px yellow inset;
+}
+#portfolo-web{
+    font-size: 22px;
+    color:aqua;
+    font-weight: 20px;
+    font-family: cursive;
+}
+#portfolo-web::first-letter
+{
+    margin-left: 1%;
+    font-family: Lucida Calligraphy;
+    font-size:40px;
+    color: red;
+    text-shadow: 5px 8px 5px yellow;
+}
+
+#portfolo-web::after{
+    content: '-WEB';
+    color: blue;
+    color:greenyellow;
+    
+    
+}
+
+#details{
+    float: right;
+    margin-right: 3%;
+    padding: 1%;
+    word-spacing: 25px;
+   
+}
+ 
+   
+   
+
+#details a{
+    text-decoration: none;
+    color:blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 3px solid orange;
+    border-radius: 4px;
+    
+    
+}
+#details a:hover{
+
+    border: solid yellow 3px;
+    border-radius: 20px;
+    padding:4px 11px;
+    cursor: pointer;
+    color: red;
+    box-shadow: 2px 0px -2px yellow;
+    outline: aqua 1px solid;
+    
+}
+
+
+/* to check of a web page */
+ #HOMEPAGE-2,#HOMEPAGE-3,#HOMEPAGE-4,#HOMEPAGE-5{
+    position: relative;
+    margin-bottom: 10px;
+    
+    border: 2px solid lightblue;
+    
+    
+ }
+
+/* test the web page borders*/
+
+
+#HOMEPAGE-1{
+    
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto;
+    margin:50px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homeimageboy{
+   max-width: 500px;
+   min-width: 200px;
+   min-height:150px;
+   max-height: 400px;
+   float: right;
+   border-radius:70% 30% 30% 70% / 70% 40% 60% 40%;
+   border: 6px black double;
+   outline: red 2px solid;
+   animation-name:photo;
+   animation-duration:10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   
+}
+@keyframes photo{
+    0%{
+        border-radius:70% 30% 30% 70% / 70% 40% 60% 40%;
+        border: 5px black double;
+        outline: red 2px solid;
+    }
+    10%{
+        border-radius:30% 70% 70% 30% /  30% 30%  70% 70%;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+    25%{
+        border-radius:45% 55% 70% 30% / 77% 30% 70% 23%  ;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+    35%{
+        border-radius:15% 85% 35% 65% / 77% 74% 26% 23% ;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+    40%{
+        border-radius:73% 27% 35% 65% / 56% 74% 26% 44% ;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+    50%{
+        border-radius:23% 77% 79% 21% / 45% 14% 86% 55% ;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+    60%{
+        border-radius:86% 14% 78% 22% / 45% 50% 50% 55% ;
+    }
+    75%{
+        border-radius:73% 27% 79% 21% / 56% 74% 26% 44% ;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+    90%{
+        border-radius:29% 71% 34% 66% / 70% 55% 45% 30% ;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+    100%{
+        border-radius:69% 31% 75% 25% / 70% 55% 45% 30% ;
+        border: 6px black double;
+        outline: red 2px solid;
+    }
+}
+
+
+@media (max-width: 480px) 
+{
+    body{
+        background-color:yellow;
+    }
+    #navbar{
+        background-color:lightskyblue;
+        width:100%;
+        
+    }
+    #details a{
+       border-bottom: none;
+        display: block;
+        font-size:9.5px;
+    }
+
+
+    #HOMEPAGE-1{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+   #HOMEPAGE-1,#homepageleft{
+        margin-left: 0px;
+    }
+    #homename .myname{
+        font-size: larger;
+    }
+    #homename .skill{
+        font-size:small;
+    }
+    #homename .hi{
+        font-size: medium;
+    }
+    #homename .download-btn a{
+    font-size: 10px;
+    cursor: pointer;
+    }
+    #homename .download-icon{
+        font-size: 10px;
+    }
+    #page-2 #aboutme{
+        font-size: 20px;
+    }
+    #page-2 #page-2image{
+        max-width: 100px;
+        max-height: 100px;
+        min-width: 80px;
+        min-height: 80px;
+        margin-left:33%;
+    }
+
+    #page-2 #myintro {
+        word-break:break-all;
+    }
+    #homeimageboy{
+        max-width:250px ;
+        max-height: 200px;
+    }
+    #page-2 #page-2image{
+        background-position: center;
+    }
+
+
+ /* to check of a web page */
+    #HOMEPAGE-1,#HOMEPAGE-2,#HOMEPAGE-3,#HOMEPAGE-4{
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid yellow;
+    
+ }
+    
+    
+}
+
+
+/*       -: CLOSE :-       -: NAVIGATION-BAR :-           -: CLOSE :- */
+
+
+/*-------------- PAGE - 1 ---------HOME PAGE-----------------------*/
+#homename{
+   margin: 15% 10%;
+   list-style-type: none;
+   box-sizing: border-box;
+}
+.hi{
+    
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 5px 8px 5px black ;
+    color: red;
+    font-size: 55px;
+    
+}
+.myname{
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 5px 8px 5px black ;
+    color: blue;
+   font-size: 60px;
+    
+}
+.skill{
+    
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    
+    
+}
+.myname::after{
+    content: ' SRINIVAS ';
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 5px 8px 5px black ;
+    color: red;
+    animation-name:name;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes name
+{
+    0%{
+        color: red;
+        text-shadow: 5px 8px 5px black;
+    }
+    10%{
+        color:aqua;
+        text-shadow: 5px 8px 5px aquamarine;
+    }
+    20%{
+        color: yellow;
+        text-shadow: 5px 8px 5px red;
+    }
+    30%{
+        color: blue;
+        text-shadow: 5px 8px 5px aqua;
+    }
+    50%{
+        color: red;
+        text-shadow: 5px 8px 5px yellow
+    }
+    60%{
+        color: green;
+        text-shadow: 5px 8px 5px greenyellow;
+    }
+    
+}
+
+#hello::first-line{
+    font-family:'Times New Roman', Times, serif;
+    font-size:40px;
+    color: red;
+    text-shadow: 5px 8px 5px black;
+}
+#hi {
+    font-size: 55px;
+    color: red;
+    text-shadow: 5px 8px 5px black;
+}
+#name{
+    font-size: 60px;
+    color: red;
+    text-shadow: 5px 8px 5px black;
+}
+.Frontend{
+    font-size: 50px;
+    color: red;
+    text-shadow: 5px 6px 5px yellow;
+}
+#homename .download-btn{
+    line-height: 10%;
+}
+.download-btn a
+{
+    text-decoration: none;
+    font-size: 30px;
+    border: solid green 3px;
+    border-radius: 20px;
+    padding:4px 11px;
+    color: white;
+    background-color: green;
+    
+    
+    
+}
+.download-btn a:hover{
+    color:black;
+    border: 2px solid orange;
+    background-color:orange;
+}
+.download-icon{
+    font-size: 26px;
+}
+/*    ---------        PAGE - 2     -----      -:CLOSE:-   -------------     home ------------   */
+
+
+
+#page-2{
+   position: relative;
+   margin-top: 2%;
+   margin-left:  3.5%;
+   margin-right: 3.5%;
+   margin-bottom: 6.5%;
+}
+#aboutme{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color:red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#aboutme::after{
+    content: " Me :-";
+    color: blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color:blue;
+}
+#page-2image{
+    position: relative;
+    margin-top: 35px;
+max-width: 200px;
+max-height:200px;
+min-height: 80px;
+min-width: 80px;
+border-radius: 50%;
+margin-left: 42%;
+border: 5px black double;
+outline: red 2px solid;
+background-position: center;
+}
+#imagediscription{
+    position: relative;
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+    color:black;
+}
+#myintro{
+    position: relative;
+    top: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 23px;
+    word-break: keep-all;
+    font-variant: small-caps;
+    text-indent: 100px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 28px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: black;
+}
+/* page -- ------------- 2 completed   ----------2 cmld-------------                    */
+
+
+#journey{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    color: blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color:blue;
+    font-size: 40px;
+}
+#journey::after{
+    content: " Journey :-";
+    font-size: 40px;
+    color: red;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color:red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*    ---------------------------*------------------------*/
+.timeline{
+    position: relative;
+    margin-top:8%;
+    margin-left: 20%;
+    margin-right: 5%;
+    padding-left: 50px;
+    border-left:5px solid red;
+    
+  }
+  .timeline:hover{
+    border-color: yellow;
+  }
+  
+  #Course, #Coursefull, #one ,h5,#location,p,#School
+  {
+        margin: 0%;
+        line-height: 23px;
+  }
+  #one{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  #grade{
+    font-size: 23px;
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:red;
+    color: red;
+  }
+  #School{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #Course, #Coursefull,#calender{
+    line-height: 30px;
+  }
+  #Coursefull{
+    font-variant: small-caps;
+  }
+  #Course{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:red;
+    color: red;
+    
+  }
+  #calender{
+    color: blue;
+    font-size: 18px;
+    word-spacing: 4px;
+  }
+  #location{
+   font-size: 20px;
+   color:darkorange;
+  }
+  .container{
+    position: relative;
+    max-width: 700px;
+    padding: 10px 15px;
+    border: 5.5px  aqua inset;
+    border-radius: 5px;
+    word-break: keep-all;
+    animation:myjourneyanimation  6s linear forwards;
+    
+  }
+  
+  
+  .container::before{
+      content: ' ';
+      height: 21px;
+      width: 21px;
+      border-radius: 50px;
+      position: absolute;
+      top:-4%;
+      right:105.8%;
+      background-color:greenyellow;
+      border: 4px solid red;
+      
+    
+}
+.container:hover::before{
+    background-color: red;
+    box-shadow: 0 0 9px 10px yellow;
+    border: 3px solid red;
+    
+}
+.container:hover{
+    border: 5.5px  yellow inset;
+}
+  
+  
+#container-before::before {
+content: " ";
+height: 0;
+position: absolute;
+top: 2px;
+width: 0;
+z-index: 1;
+left: -18.5px;
+border: medium solid white;
+border-width: 15px 15px 15px 0;
+border-color: transparent lightseagreen transparent transparent;
+
+}
+
+  @media screen and (max-width:768px)
+   {
+        #page-3myjourney #journey{ 
+           
+             font-size: 30px;
+          text-align: center;
+    
+        }
+        #page-3myjourney #journey::after{ 
+            font-size: 30px;
+             text-align: center;
+   
+       }
+        .timeline{
+            position: relative;
+            padding-left: 20px;
+            margin-top:70px;
+            margin-left: 5%;
+            
+        }
+        .container {
+          max-width: 250px;
+          margin-left: 8px;
+          
+        }
+        h2, h3, p {
+            font-size: 14px;
+        }
+        .container::before {
+          height: 15px;
+          width: 15px;
+         position: absolute;
+          right: 109%;
+        }
+        #container-before::before{
+          position: absolute;
+          border-width: 10px 10px 10px 0;
+          left: -15.5px;
+        }
+        #Course, #Coursefull,#calender{
+            line-height: 22px;
+          }
+          #grade{
+            font-size: 18px;
+          }
+          .timeline:hover{
+            border-color: red;
+          }
+          .container:hover::before{
+            background-color: blue;
+            box-shadow: 0 0 9px 5px aqua;
+            border: 3px solid aquamarine;
+        }
+        .container:hover{
+            border-color:aqua;
+            border-style: solid;
+        }
+    }
+
+/* ------ page - 3 MEDIA QUERYS PAGE 1,2 ABOVE---*/
+   
+
+    /* -----------*---------- page - 3 completed --------------*------------ */
+
+   
+
+#myskills{
+    
+    position: relative;
+    margin-top:50px;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color:red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#myskills::after{
+    content: " Skills :-";
+    font-size: 40px;
+    color: blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color:blue;
+}
+
+
+#myskills-leftandright{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    
+}
+
+#myskills-left {
+    border: 8px solid red;
+    border-radius: 50px;
+    border-left: none;
+    border-top:none ;
+    border-bottom:none ;
+    padding: 60px;
+    display: grid;
+    grid-template-columns:200px 200px;
+    grid-template-rows: auto auto auto;
+    column-gap:80px ;
+    row-gap: 60px;
+    
+}
+#myskillsimgcenter{
+    padding-left: 150px;
+}
+#myskills-left img{
+   width: 140px;
+   height: 120px;
+   border-radius: 25px;
+   border: 5px black double;
+   outline:black 2px solid;
+}
+
+#myskills-right{
+    border: 8px solid blue;
+    border-radius: 50px;
+    border-right: none;
+    border-top:none ;
+    border-bottom:none ;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    column-gap:30px ;
+    padding: 60px;
+    row-gap: 60px;
+}
+
+
+
+#html5progress,#css3progress,#javaprogress,#jsprogress,#mysqlprogressid
+{
+			width: 130px;
+			height: 130px;
+			border-radius: 9rem;
+			border: 19.2px solid greenyellow;
+			box-shadow: inset 0 0 7px grey;
+			border-left-color: greenyellow;
+			border-top-color: chartreuse;
+			border-right-color: darkgreen;
+			border-bottom-color: white;
+		    box-sizing: border-box;
+            text-align: center;
+            padding: 0px;
+            padding-left: 13px;
+            line-height:95px;
+            font-size: 23px;
+            font-family:'Times New Roman', Times, serif;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color:black;
+}
+.mysqlprogress
+{
+    margin-left: 200px;
+}
+#html5progress
+{
+            border-left-color: greenyellow;
+			border-top-color: chartreuse;
+			border-right-color: green;
+			border-bottom-color: white;
+}
+
+#jsprogress
+{
+    border-left-color: greenyellow;
+    border-top-color: chartreuse;
+    border-right-color: green;
+    border-bottom-color: white;
+}
+#javaprogress{
+    
+    border-left-color: greenyellow;
+     border-top-color:chartreuse;
+     border-right-color:green;
+     border-bottom-color: white;
+}
+#mysqlprogressid{
+    border-left-color: greenyellow;
+     border-top-color:chartreuse;
+     border-right-color: green;
+     border-bottom-color:white;
+}
+@media screen and (max-width:768px)
+{
+#myskills
+{
+    font-size: 30px;
+}
+#myskills::after
+{
+    font-size: 30px;
+}
+#myskills-leftandright{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+}
+#myskills-left{
+    padding: 15px;
+    column-gap:5px;
+    row-gap: 30px;
+    border-right:none;
+}
+#myskills-left img{
+    width: 80px;
+    height: 80px;
+}
+#myskillsimgcenter{
+    padding-left: 0px;
+}
+
+#myskills-right{
+    padding: 15px;
+    column-gap:5px ;
+    row-gap: 30px;
+    border-left:none;
+}
+
+
+
+
+#myskills-right #html5progress,#css3progress,#javaprogress,#jsprogress,#mysqlprogressid
+{
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            text-indent: -20px;
+            line-height:50px;
+            padding-left: 25px;
+            font-size:15px;
+}
+#mysqlprogressid{
+    margin-left: 0px;
+}
+}
+
+
+/*          page - 3 completed            */
+
+
+ 
+
+
+#HOMEPAGE-5{
+    background-color:black; 
+ }
+
+.contactme{
+    text-align: center;
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 38px;
+    position: relative;
+    margin-top: 30px;
+}
+.contactme::after{
+    content: ' Me :-';
+    color:red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+}
+
+
+
+
+.contactme-leftandright{
+    display: grid;
+    grid-template-columns: 40% 60%  ;
+    grid-template-rows: auto;
+    margin: 50px;
+    
+    
+}
+
+.contactme-left{
+    border: 2px solid red;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0px;
+    
+}
+#getintouch{
+    color:red;
+    font-size: 25px;
+   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto  auto auto;
+    width: 300px;
+    row-gap: 12px;
+    padding: 40px;
+    border-top: none;outline: none;
+}
+
+#form .inputname{
+    width: 300px;
+    height: 25px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:3px solid orange;
+    color: white;
+
+}
+#form .inputname::placeholder{
+    color: white;
+}
+.textareamsg{
+    background-color: transparent;
+    border-color: orange;
+    border-width: 2px;
+    color: white;
+}
+.textareamsg::placeholder{
+    color: white;
+}
+#submitbtn{
+    width: 100px;
+    height:30px ;
+    border-radius: 25px;
+    border: 3px orange solid;
+    background-color: transparent;
+    color:red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#submitbtn:hover{
+    background-color: orange;
+    color: black;
+}
+
+.contactme-right{
+    border: 2px solid red;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    color: white;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+ #gmail{
+    color:orange;
+    word-spacing:5px;
+    line-height: 30px;
+    font-size: 20px;
+}
+#mygmail{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 5px;
+    color: honeydew;
+}
+#address{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#followusicons{
+    padding: 20px;
+    
+}
+#followus{
+    text-align: center;
+    color: red;
+}
+#footer123{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    text-decoration: none;
+}
+#footer123 li{
+    background-color:transparent;
+}
+#footer123,.linekedin,.teligram,.facebook,.twitter,.instagram,.github{
+    font-size: 35px;
+    color: blue;
+    
+}
+.instagram:hover{
+
+color:red;
+}
+.linkedin{
+    color:blue;
+}
+
+#hover123{
+    visibility:visible;
+}
+#hover123:hover{
+    visibility: hidden;
+    
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
+#srinivas{
+    color: white;
+    text-align: center;
+    font-size:xx-small;
+}
+@media (max-width: 480px){
+    .contactme-leftandright{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin: 10px;
+    }
+    .contactme{
+        font-size: 20px;
+        text-align: center;
+    }
+    #getintouch{
+        font-size: 10px;
+        float: left;
+    }
+    #form .inputname{
+        width: 200px;
+        height: 15px;
+}
+.textareamsg{
+    width:200px;
+    height: 50px;
+}
+    .contactme-left{
+ border-right: none;
+    }
+    .contactme-right{
+        border-left: none;
+        margin: 0%;
+        padding: 0%;
+    }
+    #mygmail{
+        font-size: 15px;
+    }
+    #followusicons{
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+    }
+    #footer123,.linekedin,.teligram,.facebook,.twitter,.instagram,.github{
+        font-size: 20px;
+        padding: 0%;
+       
+    }
+    #footer123{
+    
+ 
+        
+    }
+   #followusicons #footer123 li a{
+        display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    grid-template-rows: auto;
+    text-decoration: none;
+   }
+   .teligram{
+    visibility: hidden;
+   }
+    #followus{
+        text-align: center;
+    }
+}
