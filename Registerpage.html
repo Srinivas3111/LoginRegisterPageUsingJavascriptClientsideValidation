@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register_webpage</title>
+    <link rel="stylesheet" href="register.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="top-info">
+        <span class="plain-text">Already have an account?</span>
+        <span class="loginpageregisterbutton">
+            <a href="index.html">Login</a>
+        </span>
+    </div>
+
+    <!--    table body      -->
+    <section class="logindiv">
+        <form class="loginform"  method="post"  action="Thank.html" onsubmit="return Registrationvalidationall()">
+            <table class="logintable" border="0">
+                <caption style="font-size: xx-large">Registration Form</caption>
+                <!-- firstname/lastname -->
+                <tr>
+                    <td>
+                        <label>First Name:</label>
+                        <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" id="firstname">
+                        <span style="color: red;font-size: 12px; display: block;text-align: left;"
+                            id="errorfirstname"></span>
+                    </td>
+
+                    <td>
+                        <label>Last Name:</label>
+                        <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" id="lastname">
+                        <span style="color: red;font-size: 12px; display: block;text-align: left;"
+                            id="errorlastname"></span>
+                    </td>
+                </tr>
+                <!-- mobile/email -->
+                <tr>
+                    <td>
+                        <label>Mobile No:</label>
+                        <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="number" id="mobilenumber" name="mobilenumber">
+                        <span style="color: red;font-size: 10px; display: block;text-align: left;"
+                            id="errormobilenumber"></span>
+                    </td>
+
+                    <td>
+                        <label>Email:</label>
+                        <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="email" id="emailid" name="emailid">
+                        <span style="color: red;font-size: 15px; display: block;text-align: left;"
+                            id="erroremail"></span>
+                    </td>
+                </tr>
+                <!--     password/conformpassword    -->
+                <tr>
+                    <td>
+                        <label>Password:</label>
+                        <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password">
+                        <span style="color: red;font-size: 10px; display: block;text-align: left;"
+                            id="errorpassword"></span>
+                    </td>
+
+                    <td>
+                        <label>Conform <br> Password:</label>
+                        <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="password" id="conformpassword" name="conformpassword">
+                        <span style="color: red;font-size: 10px; display: block;text-align: left;"
+                            id="errorconformpassword"></span>
+                    </td>
+                </tr>
+                <!-- radio  -->
+                <tr>
+                    <td>
+                        <label>Gender:</label>
+                        <span style="color: red;">*</span>
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male">Male
+                        <input type="radio" name="gender" id="female" value="Female">Female
+                        <input type="radio" name="gender" id="other" value="Other">Other
+                        <span style="color: red;font-size: 14px; display: block;text-align: left;" id="errorgender"></span>
+                    </td>
+
+                    <td >
+                           <label>Address:</label>
+                           <span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="address">
+                        <span style="color: red;font-size: 14px; display: block;text-align: left;" id="erroraddress"></span>
+
+                    </td>
+                </tr>
+
+                <!-- submit and reset -->
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="agreetermsandconsitions" name="agree_terms_and_conditions" >
+                         I agree to the Terms and Conditions.
+                         <span style="color: red;font-size: 14px; display: block;text-align: left;" id="erroragreetermsandconsitions"></span>
+
+                    </td>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit" class="login-btn">
+                        <input type="reset" value="Clear"class="reset-btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+
+    <script src="register.js">
+        
+    </script>
+</body>
+
+</html>

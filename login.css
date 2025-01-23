@@ -1,0 +1,144 @@
+body {
+    margin: 0; 
+    height: 100vh; 
+    background-image: url(backgroundimage.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+
+.top-info {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.plain-text {
+    font-weight: normal; 
+    color: black;
+    font-size: 15px;
+}
+
+.loginpageregisterbutton {
+    padding: 8px 15px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:  #ee0979 ;
+    background-color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.loginpageregisterbutton a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+}
+
+.loginpageregisterbutton {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    
+}
+
+.loginpageregisterbutton:hover {
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.logindiv {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+.loginform {
+    border: solid 2px red;
+    font-family: Arial, sans-serif;
+}
+
+.logintable {
+   
+    color:blue;
+    margin: auto; 
+    height: 300px;
+   
+}
+.loginscr{
+    padding: 6px 15px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: skyblue;
+    background-color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.login-btn,.register-btn,.create-account-btn,.reset-btn{
+padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+.login-btn {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.register-btn {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    
+}
+
+.register-btn:hover {
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.create-account-btn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+.reset-btn{
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+.reset-btn:hover{
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.create-account-btn:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/#loginpassworderror,#loginemailerror {
+    color: red;
+    display: block; 
+    margin-bottom:3px; 
+    border-collapse: collapse;
+}
+
+}

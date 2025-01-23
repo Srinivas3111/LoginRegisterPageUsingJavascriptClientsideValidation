@@ -1,0 +1,106 @@
+body {
+    margin: 0; 
+    height: 100vh; 
+    background-image: url(backgroundimage.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative; /
+}
+
+.top-info {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.plain-text {
+    font-weight: normal; /* Ensures it's just regular text */
+    color: black; /* Color of the text */
+    font-size: 15px;
+}
+
+.loginpageregisterbutton {
+    padding: 8px 15px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:  #ee0979 ;
+    background-color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.loginpageregisterbutton a {
+    text-decoration: none; /* Removes underline from the link */
+    color: black; /* Link text color */
+    font-weight: bold; /* Bold the link */
+}
+
+.loginpageregisterbutton {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    
+}
+
+.loginpageregisterbutton:hover {
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.logindiv {
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Set a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.loginform {
+    border: solid 2px red;
+    font-family: Arial, sans-serif;
+}
+.login-btn,.reset-btn
+{
+    padding: 10px 25px;
+        font-size: 16px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+.logintable {
+   
+    color:blue;
+    margin: auto; /* Centers the table inside the form */
+    height: 300px;
+    border-collapse:collapse;
+   
+}
+.login-btn {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.reset-btn{
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+.reset-btn:hover{
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

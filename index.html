@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login&Register_webpage</title>
+    <link rel="stylesheet" href="login.css" type="text/css" />
+  </head>
+  
+  <body>
+    <div class="top-info">
+      <span class="plain-text">Don't have an account? </span>
+      <span class="loginpageregisterbutton"
+        ><a href="Registerpage.html">Create your account</a></span
+      >
+    </div>
+
+    <section class="logindiv">
+      <form
+        class="loginform"
+        action="https://srinivas3111.github.io/PORTFOLIOWEBPAGE/"
+        onsubmit="return validationemailpassword()" method="post" >
+        <table class="logintable" border="0">
+          <caption style="font-size: xx-large">
+            Login
+          </caption>
+          <tr>
+            <td>
+              <label>Email Address:</label>
+              <span style="color: red">*</span>
+            </td>
+            <td>
+              <input type="email" name="email" id="loginemail" />
+              <span id="loginemailerror" style="font-size: 13px"></span>
+            </td>
+          </tr>
+
+          <!--     password             -->
+          <tr>
+            <td>
+              <label>Password:</label>
+              <span style="color: red">*</span>
+            </td>
+            <td>
+              <input type="password" name="LoginPassword" id="LoginPassword" />
+              <span id="loginpassworderror" style="font-size: 10px"></span>
+            </td>
+          </tr>
+
+          <!--    checkbox              -->
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                class="logincheckbox"
+                style="height: 18px; width: 18px"
+                name="checkbox"
+                id="checkbox"
+                value="Rember_me"
+              />Rember me
+
+              <span id="logincheckerror"></span>
+            </td>
+            <td>
+              <label style="float: right; font-size: 18px"
+                ><a href="forgetpassword.html">Forget Password?</a></label
+              >
+            </td>
+          </tr>
+
+          <!--   submit/reset               -->
+          <tr>
+            <td style="text-align: center">
+              <input type="submit" value="Login" class="login-btn" />
+            </td>
+            <td style="text-align: center">
+              <input type="reset" value="Clear" class="reset-btn" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center" colspan="2">
+              <span class="plain-text">Don't have an account?</span
+              ><a href="Registerpage.html" class="register-btn">Register</a>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+
+    <script src="login.js">
+      
+    </script>
+  </body>
+</html>
